@@ -1,0 +1,37 @@
+.primary {
+    --ion-background-color: #0c8;
+}
+
+.mainSlide,
+.mainSlide ion-slide {
+    width: 100%;
+    height: 100%;
+    --ion-background-color: #0c8;
+}
+
+img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.pick-avatar {
+    width: 80px;
+    opacity: 0.3;
+}
+
+.pick-avatar-selected {
+    transition: opacity 0.5s linear;
+    opacity: 1 !important;
+}
+
+ion-item {
+    --ion-background-color: transparent!important;
+}
+
+ion-list {
+    --ion-background: transparent!important;
+}
+
+ion-input {
+    --ion-background: transparent;
+}

@@ -1,0 +1,23 @@
+<ion-app>
+    <ion-header class="ion-padding">
+        <ion-toolbar>
+            <ion-searchbar placeholder="Buscar..." inputmode="string" type="string" (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
+        </ion-toolbar>
+
+        <ion-toolbar color="light">
+            <ion-buttons slot="secondary">
+                <ion-button expand="full" type="button" size="large" color="primary" fill="solid">Planes</ion-button>
+                <ion-button expand="full" type="button" size="large" color="primary" fill="solid">Guías</ion-button>
+                <ion-button expand="full" type="button" size="large" color="primary" fill="solid">Personalizar</ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="bgcolor">
+        <!-- Refresher -->
+
+        <app-trips class="mainSlide" [trips]="trips"></app-trips>
+
+        <!-- Infinite scroll -->
+    </ion-content>
+</ion-app>

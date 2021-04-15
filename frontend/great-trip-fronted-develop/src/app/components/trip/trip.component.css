@@ -1,0 +1,34 @@
+.img-detail {
+    border-radius: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    color: rgb(86, 172, 0);
+    font-weight: 700;
+}
+
+.field {
+    font-weight: 700;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.center {
+    align-items: center;
+}
+
+.tPlace {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+section {
+    margin: 0 1em;
+}
+
+.bgcolor {
+    --ion-background-color: #daffd9;
+}

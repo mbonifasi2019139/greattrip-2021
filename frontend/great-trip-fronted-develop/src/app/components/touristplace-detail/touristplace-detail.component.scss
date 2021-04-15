@@ -1,0 +1,57 @@
+.bgcolor {
+    --ion-background-color: #daffd9;
+}
+
+.trip {
+    margin-top: 10px;
+    -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.image-trip {
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+}
+
+.image-slide {
+    width: 100%;
+    height: 14rem;
+    // background-color: red;
+    /* Full height */
+    // height: 100%; 
+    /* Imagen centrada y colocada de forma elegante */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #00febe;
+    margin: 0;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.field {
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.tourist-place {
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: white !important;
+    padding: .5rem;
+}

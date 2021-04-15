@@ -1,0 +1,24 @@
+<div>
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12">
+                <!-- <ion-slides class="mainSlide" #mainSlide>
+                    <ion-slide>
+                        <div> -->
+                <ion-card class="trip" *ngFor="let trip of trips" id="{{ trip._id}}" (click)="showTripDetail(card.el.id)" color="light" #card>
+                    <img class="image-slide" style="background-image: url('{{ trip.imageUrl }}')">
+                    <ion-card-header>
+                        <ion-card-title>{{ trip.title }} | {{ trip.country }}</ion-card-title>
+                        <ion-card-subtitle color="success">$ {{ trip.price }}</ion-card-subtitle>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-label>
+                            {{ trip.description | slice: 0:100 }}...
+                        </ion-label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>

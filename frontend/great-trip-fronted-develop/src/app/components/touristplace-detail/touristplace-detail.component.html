@@ -1,0 +1,68 @@
+<ion-content class="bgcolor">
+    <h2 class="title center" color="dark">{{ touristPlace.name }}</h2>
+
+    <ion-slides mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide *ngFor="let img of touristPlace.urlsImages">
+            <img style="background-image: url('{{ img }}');" class="image-slide">
+        </ion-slide>
+    </ion-slides>
+
+    <ion-grid fixed class="justify tourist-place" color="light">
+        <ion-row>
+            <ion-col size="6" class="field">
+                Pais
+            </ion-col>
+            <ion-col size="6" color="success">
+                {{ touristPlace.country }}
+            </ion-col>
+            <ion-col size="12" class="field">
+                Descripcion
+            </ion-col>
+            <ion-col>
+                <ion-label>
+                    <ion-label> {{ touristPlace.description }}</ion-label>
+                </ion-label>
+            </ion-col>
+            <ion-col size="12">
+                <ion-list color="light">
+                    <ion-list-header>
+                        Reseñas
+                    </ion-list-header>
+                    <ion-item>
+                        <ion-avatar slot="start">
+                            <ion-img class="pick-avatar" src="/assets/avatars/av-1.png"></ion-img>
+                        </ion-avatar>
+                        <ion-label>Julio Lima</ion-label>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, reiciendis accusantium eveniet dolor eligendi cumque praesentium temporibus et magni, deserunt error iure illum sequi dolorem dolores. Doloribus possimus non saepe!</p> -->
+                    </ion-item>
+                    <ion-item>
+                        <ion-avatar slot="start">
+                            <ion-img class="pick-avatar" src="/assets/avatars/av-2.png"></ion-img>
+                        </ion-avatar>
+                        <ion-label>Daniel Flores</ion-label>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, reiciendis accusantium eveniet dolor eligendi cumque praesentium temporibus et magni, deserunt error iure illum sequi dolorem dolores. Doloribus possimus non saepe!</p> -->
+                    </ion-item>
+                    <ion-item>
+                        <ion-avatar slot="start">
+                            <ion-img class="pick-avatar" src="/assets/avatars/av-3.png"></ion-img>
+                        </ion-avatar>
+                        <ion-label>Yo</ion-label>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, reiciendis accusantium eveniet dolor eligendi cumque praesentium temporibus et magni, deserunt error iure illum sequi dolorem dolores. Doloribus possimus non saepe!</p> -->
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="closeTripModal()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                <ion-label>Regresar</ion-label>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>
